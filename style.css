@@ -15,7 +15,7 @@ body {
 
 .txt1 {
     font-size: 2.8rem;
-    /* line-height: 2.5rem; */
+    line-height: 3.4rem;
 }
 
 .txt2 {
@@ -25,6 +25,10 @@ body {
 
 .txt3 {
     font-size: 1.16rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
 }
 
 .flex {
@@ -62,7 +66,7 @@ hr {
 
 .container {
     width: 1200px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     z-index: 20;
     position: relative;
@@ -71,7 +75,7 @@ hr {
 
 .container2 {
     width: 1200px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     z-index: 20;
     position: relative;
@@ -225,10 +229,74 @@ input:required:valid~label {
     z-index: 5;
 }
 
+.download .left {
+    position: relative;
+}
+
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #302e2e;
+    width: 57%;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.download-section-left {
+    display: flex;
+    align-items: center;
+    /* gap: .8rem; */
+}
+
+.dl-thumb {
+    width: 65px !important;
+    padding: 10px;
+}
+
 .download .left img {
     width: 100%;
 }
 
+.dl-btn {
+    width: 50px !important;
+}
+
+.dl-name {
+    font-weight: 500;
+    font-size: .93rem;
+}
+
+.dl-txt {
+    font-size: .83rem;
+    color: rgb(30, 68, 255);
+}
+
 .download .right {
     flex-basis: 60%;
+}
+
+.watch {
+    width: 57%;
+    margin: auto;
+}
+
+.watch .left,
+.watch .right,
+.kids .left,
+.kids .right {
+    flex-basis: 50%;
+}
+
+.kids {
+    align-items: center;
+}
+
+.kids .left img {
+    width: 100%;
 }

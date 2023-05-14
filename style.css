@@ -65,8 +65,8 @@ hr {
 }
 
 .container {
-    width: 1200px;
-    /* border: 1px solid red; */
+    max-width: 1200px;
+    width: 90%;
     margin: auto;
     z-index: 20;
     position: relative;
@@ -74,12 +74,11 @@ hr {
 }
 
 .container2 {
-    width: 1200px;
-    /* border: 1px solid red; */
+    max-width: 1200px;
+    width: 90%;
     margin: auto;
     z-index: 20;
     position: relative;
-    /* padding: 1.2rem .2rem; */
 }
 
 nav {
@@ -128,9 +127,7 @@ nav {
     align-items: center;
     justify-content: center;
     /* width: 35%; */
-    /* border: 1px solid blue; */
     margin: auto;
-    /* margin-top: 1.5rem; */
     gap: .5rem;
 }
 
@@ -140,7 +137,7 @@ nav {
     border: 1px solid rgb(148, 148, 148);
     border-radius: 3px;
     background: #1b1b1b;
-    padding: 1.7rem;
+    height: 60px;
     position: relative;
     transition: .3s;
     width: 400px;
@@ -178,7 +175,8 @@ input:required:valid~label {
 
 
 .subscribe button {
-    padding: .6rem 1.4rem;
+    width: 200px;
+    height: 60px;
     font-family: inherit;
     font-size: 1.5rem;
     background: rgb(216, 31, 38);
@@ -189,7 +187,6 @@ input:required:valid~label {
     border-radius: 3px;
     cursor: pointer;
     transition: .3s;
-    /* font-weight: 500; */
 }
 
 .subscribe button span {
@@ -225,9 +222,11 @@ input:required:valid~label {
 
 .tv .right video {
     position: absolute;
-    top: 89px;
-    left: 75px;
-    width: 408px;
+    /* top: 80px; */
+    top: 20%;
+    left: 12%;
+    /* width: 408px; */
+    width: 77%;
     z-index: 5;
 }
 
@@ -386,4 +385,151 @@ input:required:valid~label {
 .ft {
     margin-top: 1.5rem;
     font-size: .88rem;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .subscribe button {
+        font-size: 1.2rem;
+        width: 200px;
+    }
+
+    .txt1 {
+        font-size: 2rem;
+    }
+
+    .txt2 {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .txt3 {
+        font-size: .89rem;
+    }
+
+    .tv,
+    .watch {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .tv .right video {
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        width: 75%;
+        z-index: 5;
+    }
+
+    .download,
+    .kids {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .download .left img {
+        width: 90%;
+    }
+
+    .kids img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .logo {
+        width: 6rem;
+    }
+
+    .subscribe {
+        width: 90%;
+        margin: auto;
+        gap: .5rem;
+    }
+
+    .email-container {
+        height: 50px;
+        flex: auto;
+    }
+
+    .subscribe button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .footer-link1 {
+        font-size: .85rem;
+    }
+
+    .footer-links {
+        font-size: .8rem;
+    }
+
+    .kids {
+        gap: 3rem;
+    }
+
+    .faq-header {
+        padding: .6rem 1.8rem;
+    }
+
+    .show-btn {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .subscribe {
+        width: 90%;
+        margin: auto;
+        gap: .5rem;
+        flex-direction: column;
+    }
+
+    .email-container {
+        width: 100%;
+        height: 50px;
+    }
+
+    .subscribe button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .txt1 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .txt2 {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    .txt3 {
+        font-size: .79rem;
+    }
+
+    .faq-cont.container2 {
+        width: 100%;
+    }
+
+    .faq-header {
+        padding: .6rem 1.8rem;
+    }
+
+    .show-btn {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links {
+        grid-template-columns: repeat(2, auto);
+    }
 }

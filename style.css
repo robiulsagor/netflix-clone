@@ -153,6 +153,7 @@ nav {
     left: 1rem;
     transition: .3s;
     color: #ccc;
+    pointer-events: none;
 }
 
 .email-container input {
@@ -163,9 +164,10 @@ nav {
     width: 100%;
     font-size: 1.1rem;
     position: absolute;
-    left: 1rem;
+    left: 0rem;
     top: 60%;
     transform: translateY(-50%);
+    padding: 1rem;
 }
 
 input:focus~label,
@@ -299,4 +301,89 @@ input:required:valid~label {
 
 .kids .left img {
     width: 100%;
+}
+
+.faqs {
+    margin: 2rem 1rem;
+}
+
+.faq {
+    background: #2d2d2d;
+    margin-bottom: .7rem;
+}
+
+.faq-header {
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: .4rem 1.8rem;
+    transition: .3s;
+}
+
+.faq-header:hover {
+    background: #605e5e;
+}
+
+.show-btn {
+    font-size: 3.3rem;
+    font-weight: 300;
+    transition: rotate .2s;
+}
+
+.faq-body {
+    height: 0;
+    padding: 0rem 1.8rem;
+    overflow: hidden;
+    transition: .3s;
+    border-top: 1px solid #000;
+}
+
+.faq.show .faq-body {
+    padding: 10px 1.8rem;
+}
+
+.faq.show .show-btn {
+    rotate: 45deg;
+}
+
+
+.email-membersip {
+    text-align: center;
+    margin: 4.5rem 0;
+    margin-bottom: 1rem !important;
+}
+
+.footer a,
+.footer span,
+.footer p {
+    color: #c7c1c1;
+}
+
+.footer-link1 {
+    font-size: .98rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: .9rem;
+    margin-top: 1.8rem;
+
+}
+
+.footer-links a {
+    margin: .5rem 0;
+}
+
+.footer-lang {
+    border: 1px solid #999;
+    border-radius: 4px;
+    display: inline-block;
+    padding: .2rem 1.6rem;
+    margin-top: 1.5rem;
+}
+
+.ft {
+    margin-top: 1.5rem;
+    font-size: .88rem;
 }
